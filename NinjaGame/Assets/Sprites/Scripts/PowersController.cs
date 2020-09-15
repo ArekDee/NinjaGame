@@ -91,7 +91,7 @@ public class PowersController : MonoBehaviour
     {
         autoPlay = true;
         power3Button.interactable = false;
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(12.5f);
         autoPlay = false;
         power3Button.interactable = true;
     }

@@ -15,6 +15,7 @@ public class LevelLoader : MonoBehaviour
     }
     public void LoadNextScene()
     {
+        FindObjectOfType<GameController>().SaveCoinAmount();
         SceneManager.LoadScene(currentScene + 1);
     }
     public void LoadPrevioustScene()
@@ -77,6 +78,7 @@ public class LevelLoader : MonoBehaviour
         Time.timeScale = 1;
         MusicController.PlayMenuMusic();
         FindObjectOfType<GameInfoController>().isStartedFromCheckpoint = false;
+        FindObjectOfType<GameController>().SaveCoinAmount();
         SceneManager.LoadScene(0);
 
     }
