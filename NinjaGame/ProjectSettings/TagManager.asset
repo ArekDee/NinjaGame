@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - PlayerBody
+  - checkpoint1
+  - checkpoint2
   layers:
   - Default
   - TransparentFX
@@ -13,9 +16,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - Tiles
+  - Player
+  - Walls
   - 
   - 
   - 
@@ -40,4 +43,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2523771397
+    locked: 0
+  - name: Foreground
+    uniqueID: 3698921387
+    locked: 0
+  - name: Player
+    uniqueID: 363536363
     locked: 0
